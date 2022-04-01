@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog</title>
+	<link rel = "stylesheet" href = "../css/blog.css">
+	<!-- using fontawesome -->
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js"  crossorigin="anonymous"></script>
+	<!-- using google web fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+	<!--navigation bar-->
+	<nav class="navbar">
+		<div class="max-width">
+			<div class="logo"><a href="../index.html">Rohit<span>Pun</span></a></div>
+			<ul class="menu">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="contact.html">Contact</a></li>	
+			</ul>
+		</div>	
+	</nav>
+
+	<header>
+		<h1>Blog</h1>
+	</header>
+	<div class="row">
+		<div class="content">
+			<div class="card">
+				<h2>Effect Of Technology In Daily Life</h2>
+				<h5>May 28, 2021</h5>
+				<img src="../images/blog.jpg" alt="blog">
+				<br/>
+				<p>
+					Over the last two to three decades, technology has become an ever-increasing part of our daily lives, to the point where it has taken over. Stop reading this post for a moment and look around you. What stands out to you? Do you notice any technology, gadgets, computers, or video monitoring?
+				</p>
+				<br/>
+				<br/>
+				<span id="dots">...</span>
+				<span id="more">
+				<p>
+					Cell phones were primarily used for calling and texting just over a decade ago. Cell phones are now used for a wide variety of purposes. Phones can do everything from take high-resolution photos to watch pixel-perfect videos, browse the internet, play graphic-intensive games, and even track your movements.
+				</p>
+				<br/>
+				<br/>
+				<p>
+					The introduction of smartphones has greatly simplified our lives. People can now communicate with their loved ones more frequently and easily than ever before thanks to video calls and instant messaging services. Tasks such as creating slides, reading emails, and creating documents no longer necessitate the use of a PC.
+				</p>
+				<br/>
+				<br/>
+				<p>
+					In a nutshell, smartphones and apps have altered the way we work, communicate, and entertain ourselves. Furthermore, the explosive growth of e-commerce and internet-based businesses is directly proportional to the rapid proliferation of smartphones.
+				</p>
+				<br/>
+				<br/>
+				<p>
+					While the smartphone revolution has simplified our lives, it has also made us slackers. Because the entire world is now at our fingertips, we no longer need to work or move around as much as we used to in order to get things done.
+				</p>
+				<br/>
+				<br/>
+				<p>
+					Our sedentary lifestyle and lack of physical activity can be attributed in part to our reliance on smartphones. This is especially true for the younger generation, who are glued to their cell phones at all times. Cell phone addiction has a negative impact on our lives in the modern era. To effectively address this issue, care must be taken.
+				</p>
+				</span>
+				<button type="button" id="read" onclick="read()">Read more</button>
+			</div>
+		</div>		
+	</div>
+
+	<!-- footer -->
+	<footer>
+		<!-- social-->
+		<p>Social</p>
+			<!-- social icons -->
+			<div class="social-icons">
+				
+				<a href="https://www.facebook.com/profile.php?id=100013901380472" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://twitter.com/weinermike31" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://t.me/RohitPun" target="_blank"><i class="fab fa-telegram"></i></a>
+
+			</div>
+		<!-- copyright -->
+		<p class="copyright">Copyright &copy;  by Rohit Pun</p>
+	</footer>
+
+	<!-- using internal javascript -->
+	<script type="text/javascript">
+		/* declaring a variable i with value 0 */
+		var i=0;
+
+		/* creating a function called 'read' */
+		function read(){
+			/* this part gets executed if the condition within the paranthesis is met */
+			if(!i){
+				/* grabbing elements by their id */
+				document.getElementById("more").style.display = "inline";
+				document.getElementById("dots").style.display = "none";
+				document.getElementById("read").innerHTML = "Read less";
+				/* storing value 1 in i */
+				i = 1;
+			}
+			/* this part gets executed if the condition within the paranthesis is not met */
+			else{
+				/* grabbing elements by their id */
+				document.getElementById("more").style.display = "none";
+				document.getElementById("dots").style.display = "inline";
+				document.getElementById("read").innerHTML = "Read more";
+				/* storing value 0 in i */
+				i = 0;
+			}
+		}
+	</script>
+</body>
+</html>
